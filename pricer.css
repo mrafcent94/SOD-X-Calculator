@@ -21,8 +21,7 @@ header h2 {
 }
 
 input {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .btn {

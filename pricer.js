@@ -108,9 +108,10 @@ var bahia = function() {
         }
 }
 
-
-
-
+//Clear
+var clear = function() {
+    location.reload();
+}
 
 $("#flo").on("click", floratam);
 $("#bit").on("click", bitsev);
@@ -118,3 +119,4 @@ $("#sev").on("click", bitsev);
 $("#zeo").on("click", zeon);
 $("#emp").on("click", empire);
 $("#bah").on("click", bahia);
+$("#clear").on("click", clear);
