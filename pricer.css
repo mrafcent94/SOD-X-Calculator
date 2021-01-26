@@ -1,0 +1,60 @@
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 40%;
+}
+
+header h2 {
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.input {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn {
+    width: 25%;
+    border-color: rgb(15, 138, 15);
+    border-width: 3px;
+    background-color: rgba(163, 149, 17, 0.795);
+    font-weight: bold;
+}
+
+.buttons {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    margin: 10px;
+}
+
+.output {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px;
+}
