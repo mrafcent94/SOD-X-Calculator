@@ -5,7 +5,12 @@ var floratampiece = parseFloat("2.50")
 var floratam = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal > 0) {
+        if (pal & pie) {
+            alert("Please enter your value in either pallets or pieces, not both!")
+            $('#piece').val("");
+            $('#pallet').val("");
+        }
+        else if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * floratampallet);
             $(".output").text("$" + math);
@@ -29,7 +34,12 @@ var bitsevpiece = parseFloat("3.00")
 var bitsev = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal > 0) {
+        if (pal & pie) {
+            alert("Please enter your value in either pallets or pieces, not both!")
+            $('#piece').val("");
+            $('#pallet').val("");
+        }
+        else if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * bitsevpallet);
             $(".output").text("$" + math);
@@ -53,7 +63,12 @@ var zeonpiece = parseFloat("12.00")
 var zeon = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal > 0) {
+        if (pal & pie) {
+            alert("Please enter your value in either pallets or pieces, not both!")
+            $('#piece').val("");
+            $('#pallet').val("");
+        }
+        else if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * zeonpallet);
             $(".output").text("$" + math);
@@ -77,7 +92,12 @@ var empirepiece = parseFloat("6.00")
 var empire = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal > 0) {
+        if (pal & pie) {
+            alert("Please enter your value in either pallets or pieces, not both!")
+            $('#piece').val("");
+            $('#pallet').val("");
+        }
+        else if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * empirepallet);
             $(".output").text("$" + math);
@@ -101,7 +121,12 @@ var bahiapiece = parseFloat("2.00")
 var bahia = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal > 0) {
+        if (pal & pie) {
+            alert("Please enter your value in either pallets or pieces, not both!")
+            $('#piece').val("");
+            $('#pallet').val("");
+        }
+        else if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * bahiapallet);
             $(".output").text("$" + math);
