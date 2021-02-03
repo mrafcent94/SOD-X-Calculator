@@ -10,10 +10,6 @@ header h2 {
     margin-top: 5px;
 }
 
-#clear {
-    background-color: rgb(255, 98, 98);
-}
-
 .input {
     justify-content: center;
     margin-top: 10px;
@@ -31,6 +27,10 @@ input {
     background-color: rgba(163, 149, 17, 0.795);
     font-weight: bold;
     padding: 2px;
+}
+
+#clear {
+    background-color: rgb(255, 98, 98);
 }
 
 .buttons {
