@@ -1,22 +1,22 @@
 header {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-header img {
-    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 header h2 {
-    font-size: 33px;
+    font-size: 24px;
     font-weight: lighter;
-    margin-top: 10px;
+    margin-top: 5px;
+}
+
+#clear {
+    background-color: rgb(255, 98, 98);
 }
 
 .input {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -30,11 +30,12 @@ input {
     border-width: 3px;
     background-color: rgba(163, 149, 17, 0.795);
     font-weight: bold;
+    padding: 2px;
 }
 
 .buttons {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 button {
@@ -42,10 +43,10 @@ button {
 }
 
 .output {
+    margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin-top: 10px;
 }
 
 footer {
@@ -55,5 +56,16 @@ footer {
 footer h3 {
     font-weight: bold;
     font-size: 20px;
-    margin: 30px;
+    margin: 20px;
 }
+
+@media screen and ( max-width: 1024px ) {
+    img.responsive { width: 200px; }
+    }
+    @media screen and ( min-width: 1025px) {
+    img.responsive { width: 300px;}
+    }
+    img.responsive { height: auto; }
+    .btn {
+        font-size: small;
+    }

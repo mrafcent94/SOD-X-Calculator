@@ -5,18 +5,20 @@ var floratampiece = parseFloat("2.50")
 var floratam = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal) {
+        if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * floratampallet);
             $(".output").text("$" + math);
         }
-        else if (pie) {
+        else if (pie > 0) {
             var int = parseFloat(pie);
             var math = (int * floratampiece);
             $(".output").text("$" + math);
         }
-        else if (!pal & !pie) {
-            alert("Please enter a value, either in pallets or pieces.")
+        else if (pal <= 0 & pie <= 0) {
+            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            $('#piece').val("");
+            $('#pallet').val("");
         }
 }
 
@@ -27,18 +29,20 @@ var bitsevpiece = parseFloat("3.00")
 var bitsev = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal) {
+        if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * bitsevpallet);
             $(".output").text("$" + math);
         }
-        else if (pie) {
+        else if (pie > 0) {
             var int = parseFloat(pie);
             var math = (int * bitsevpiece);
             $(".output").text("$" + math);
         }
-        else if (!pal & !pie) {
-            alert("Please enter a value, either in pallets or pieces.")
+        else if (pal <= 0 & pie <= 0) {
+            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            $('#piece').val("");
+            $('#pallet').val("");
         }
 }
 
@@ -49,18 +53,20 @@ var zeonpiece = parseFloat("12.00")
 var zeon = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal) {
+        if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * zeonpallet);
             $(".output").text("$" + math);
         }
-        else if (pie) {
+        else if (pie > 0) {
             var int = parseFloat(pie);
             var math = (int * zeonpiece);
             $(".output").text("$" + math);
         }
-        else if (!pal & !pie) {
-            alert("Please enter a value, either in pallets or pieces.")
+        else if (pal <= 0 & pie <= 0) {
+            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            $('#piece').val("");
+            $('#pallet').val("");
         }
 }
 
@@ -71,18 +77,20 @@ var empirepiece = parseFloat("6.00")
 var empire = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal) {
+        if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * empirepallet);
             $(".output").text("$" + math);
         }
-        else if (pie) {
+        else if (pie > 0) {
             var int = parseFloat(pie);
             var math = (int * empirepiece);
             $(".output").text("$" + math);
         }
-        else if (!pal & !pie) {
-            alert("Please enter a value, either in pallets or pieces.")
+        else if (pal <= 0 & pie <= 0) {
+            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            $('#piece').val("");
+            $('#pallet').val("");
         }
 }
 
@@ -93,24 +101,28 @@ var bahiapiece = parseFloat("2.00")
 var bahia = function() {  
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
-        if (pal) {
+        if (pal > 0) {
             var int = parseFloat(pal);
             var math = (int * bahiapallet);
             $(".output").text("$" + math);
         }
-        else if (pie) {
+        else if (pie > 0) {
             var int = parseFloat(pie);
             var math = (int * bahiapiece);
             $(".output").text("$" + math);
         }
-        else if (!pal & !pie) {
-            alert("Please enter a value, either in pallets or pieces.")
+        else if (pal <= 0 & pie <= 0) {
+            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            $('#piece').val("");
+            $('#pallet').val("");
         }
 }
 
 //Clear
 var clear = function() {
-    location.reload();
+    $('.output').text("0");
+    $('#piece').val("");
+    $('#pallet').val("");
 }
 
 $("#flo").on("click", floratam);
