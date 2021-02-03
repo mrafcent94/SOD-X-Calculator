@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./pricer.css" />
+    <title>Sod-X Pricer</title>
+</head>
+
+<body>
+    <header>
+        <img class="responsive" src="./assets/images/SDX.jpg">
+        <h2>Price Calculator</h2>
+    </header>
+
+    <main class="container d-flex flex-column">
+        <div>
+            <p class="output">0
+            </p>
+        </div>
+
+        <div class="row input">
+            <input type="number" id="pallet" placeholder="Number of Pallets?" col-3></input>
+            <input type="number" id="piece" placeholder="Number of Pieces?" col-3></input>
+        </div>
+    
+        <div class="flex-column">
+            <div class="row buttons w-120">
+                <button class="btn col-3" type="button" id="zeo">Zeon Zoysia</button>
+                <button class="btn col-3" type="button" id="emp">Empire Zoysia</button>
+                <button class="btn col-3" type="button" id="bah">Argentine Bahia</button>
+            </div>
+
+            <div class="row buttons w-120">
+                <button class="btn col-3" type="button" id="flo">Floratam</button>
+                <button class="btn col-3" type="button" id="flo">Floratam</button>
+                <button class="btn col-3" type="button" id="bit">Bitter-Blue</button>
+                <button class="btn col-3" type="button" id="sev">Seville</button>
+                <button class="btn" type="button" id="clear">Reset</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>&#169 SOD-X Inc.</h3>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./pricer.js"></script>
+</body>
+</html>
