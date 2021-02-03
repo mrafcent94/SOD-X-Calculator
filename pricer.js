@@ -47,7 +47,7 @@ var bitsev = function() {
 }
 
 //Zeon
-var zeonpallet = parseFloat("399.00")
+var zeonpallet = parseFloat("499.00")
 var zeonpiece = parseFloat("12.00")
 
 var zeon = function() {  
@@ -71,7 +71,7 @@ var zeon = function() {
 }
 
 //Empire
-var empirepallet = parseFloat("385.00")
+var empirepallet = parseFloat("399.00")
 var empirepiece = parseFloat("6.00")
 
 var empire = function() {  
