@@ -125,6 +125,13 @@ var clear = function() {
     $('#pallet').val("");
 }
 
+//Detect Enter Key Press
+$(document).on("keypress", function(e) {
+    if (e.which === 13) {
+        alert("Please select a sod type.")
+    }
+});
+
 $("#flo").on("click", floratam);
 $("#bit").on("click", bitsev);
 $("#sev").on("click", bitsev);
