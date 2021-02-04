@@ -163,6 +163,22 @@ var bahia = function() {
         }
 }
 
+var delivery = function() {
+    var output = $('.output').text();
+    var res = output.split("$")
+    var int = parseInt(res[1])
+    if (int >= 0) {
+        var fee = parseInt("95");
+        var added = int + fee;
+        $(".output").text("$" + added);
+    }
+    else {
+        var message = "Please choose your sod first."
+        $('#alertModal').find('.modal-body p').text(message);
+        $('#alertModal').modal('show');
+    } 
+}
+
 //Clear
 var clear = function() {
     $('.output').text("0");
@@ -185,4 +201,5 @@ $("#sev").on("click", bitsev);
 $("#zeo").on("click", zeon);
 $("#emp").on("click", empire);
 $("#bah").on("click", bahia);
+$("#delivery").on("click", delivery)
 $("#clear").on("click", clear);
