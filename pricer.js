@@ -6,7 +6,9 @@ var floratam = function() {
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
         if (pal & pie) {
-            alert("Please enter your value in either pallets or pieces, not both!")
+            var message = "Please enter your value in either pallets or pieces, not both!"
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -21,7 +23,9 @@ var floratam = function() {
             $(".output").text("$" + math);
         }
         else if (pal <= 0 & pie <= 0) {
-            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            var message = "Please enter a value greater than 0, in either pallets or pieces."
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -35,7 +39,9 @@ var bitsev = function() {
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
         if (pal & pie) {
-            alert("Please enter your value in either pallets or pieces, not both!")
+            var message = "Please enter your value in either pallets or pieces, not both!"
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -50,7 +56,9 @@ var bitsev = function() {
             $(".output").text("$" + math);
         }
         else if (pal <= 0 & pie <= 0) {
-            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            var message = "Please enter a value greater than 0, in either pallets or pieces."
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -64,7 +72,9 @@ var zeon = function() {
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
         if (pal & pie) {
-            alert("Please enter your value in either pallets or pieces, not both!")
+            var message = "Please enter your value in either pallets or pieces, not both!"
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -79,7 +89,9 @@ var zeon = function() {
             $(".output").text("$" + math);
         }
         else if (pal <= 0 & pie <= 0) {
-            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            var message = "Please enter a value greater than 0, in either pallets or pieces."
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -93,7 +105,9 @@ var empire = function() {
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
         if (pal & pie) {
-            alert("Please enter your value in either pallets or pieces, not both!")
+            var message = "Please enter your value in either pallets or pieces, not both!"
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -108,7 +122,9 @@ var empire = function() {
             $(".output").text("$" + math);
         }
         else if (pal <= 0 & pie <= 0) {
-            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            var message = "Please enter a value greater than 0, in either pallets or pieces."
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -122,7 +138,9 @@ var bahia = function() {
     var pal = $("#pallet").val().trim();
     var pie = $("#piece").val().trim();
         if (pal & pie) {
-            alert("Please enter your value in either pallets or pieces, not both!")
+            var message = "Please enter your value in either pallets or pieces, not both!"
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -137,7 +155,9 @@ var bahia = function() {
             $(".output").text("$" + math);
         }
         else if (pal <= 0 & pie <= 0) {
-            alert("Please enter a value greater than 0, in either pallets or pieces.")
+            var message = "Please enter a value greater than 0, in either pallets or pieces."
+            $('#alertModal').find('.modal-body p').text(message);
+            $('#alertModal').modal('show');
             $('#piece').val("");
             $('#pallet').val("");
         }
@@ -153,7 +173,9 @@ var clear = function() {
 //Detect Enter Key Press
 $(document).on("keypress", function(e) {
     if (e.which === 13) {
-        alert("Please select a sod type.")
+        var message = "Please select a sod type."
+        $('#alertModal').find('.modal-body p').text(message);
+        $('#alertModal').modal('show');
     }
 });
 
